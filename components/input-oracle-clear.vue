@@ -47,10 +47,6 @@ export default class InputOracle extends Vue {
     return ['input', this.size];
   }
 
-  get paddingLeft() {
-    return this.search ? '30px' : '10px';
-  }
-
   toggleText() {
 
   }
