@@ -12,5 +12,6 @@ export default class TitleOracle extends Vue {
 </script>
 <style lang="scss">
 .title-oracle{
-height: 16px}
+  margin-top: 2px;
+}
 </style>

@@ -88,7 +88,7 @@ main{
       display: flex;
       align-items: normal;
       justify-content: center;
-      width: 22px;
+      margin-right: 10px;
     }
     .title-oracle {
       font-family: 'Hanson';
