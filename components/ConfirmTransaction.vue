@@ -41,7 +41,7 @@ export default class CryptoInfo extends Vue {
   }
   .transaction-message {
     margin-top: 14px;
-    margin-left: 12px;
+    text-transform: uppercase;
     text-align: center;
     display: flex;
     align-items: center;
@@ -57,6 +57,7 @@ export default class CryptoInfo extends Vue {
       line-height: 140%;
     }
     .estimated {
+      font-family: "Reza Zulmi Alfaizi Sans";
       text-align: center;
       font-size: 14px;
       opacity: 0.3 ;

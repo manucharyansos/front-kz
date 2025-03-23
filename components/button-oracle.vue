@@ -31,7 +31,7 @@ export default class ButtonOracle extends Vue {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 button {
   display: flex;
   justify-content: center;

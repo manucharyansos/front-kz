@@ -48,6 +48,7 @@ export default class CryptoExchangeRate extends Vue {
 }
 
 .crypto-amount {
+  font-family: 'Reza Zulmi Alfaizi Sans';
   font-size: 16px;
   margin-right: 10px;
   display: flex;

@@ -1,22 +1,25 @@
 <template>
   <main>
     <div class="title">
-      <svg
-        class="icon"
-        xmlns="http://www.w3.org/2000/svg"
-        width="8"
-        height="16"
-        viewBox="0 0 8 16"
-        fill="none"
-      >
-        <path
-          d="M6.75 1.5835L1.25 8.00016L6.75 14.4168"
-          stroke="#F64E2A"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
+      <nuxt-link to="/">
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="16"
+          viewBox="0 0 8 16"
+          fill="none"
+        >
+          <path
+            d="M6.75 1.5835L1.25 8.00016L6.75 14.4168"
+            stroke="#F64E2A"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </nuxt-link>
+
       <TitleOracle text="External Crypto Transfer" classes="title-oracle" />
     </div>
 
@@ -59,7 +62,7 @@
     <!--      oracle button-->
 
     <div class="oracle_button">
-      <button-oracle text="Continue" color="orange" @clickTo="toCheck"/>
+      <button-oracle text="Confirm Transfer" color="orange" @clickTo="toCheck"/>
     </div>
 
   </main>
@@ -82,7 +85,9 @@ main{
     align-items: center;
     margin-right: 10px;
     .icon {
-      margin-left: 10px;
+      display: flex;
+      align-items: normal;
+      justify-content: center;
       width: 22px;
     }
     .title-oracle {
@@ -100,7 +105,6 @@ main{
   }
   .from {
     margin-top: 24px;
-    margin-left: 12px;
     .from-oracle {
       font-family: 'Hanson';
       font-weight: 700;
@@ -113,7 +117,6 @@ main{
   }
   .destination {
     margin-top: 24px;
-    margin-left: 12px;
     .destination-wallet {
       font-family: 'Hanson';
       font-weight: 700;
@@ -126,14 +129,16 @@ main{
   }
   .text_input {
     margin-top: 24px;
+    .custom-class{
+      padding: 11px;
+    }
   }
   .oracle {
     margin-top: 24px;
-    margin-left: 12px;
   }
   .oracle_button {
     margin-top: 150px;
-    margin-left: 12px;
+    margin-bottom: 20px;
     .oracle_button_component {
       background: #f64e2a;
     }

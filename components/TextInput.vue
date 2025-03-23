@@ -18,9 +18,9 @@
     </div>
     <div v-if="isIcon" class="clear_icon">
       <svg  xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="black">
-        <path d="M19.5 6.5L6.5 19.5" stroke="white" stroke-width="2" stroke-linecap="round"
+        <path d="M19.5 6.5L6.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
-        <path d="M6.5 6.5L19.5 19.5" stroke="white" stroke-width="2" stroke-linecap="round"
+        <path d="M6.5 6.5L19.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
       </svg>
     </div>
@@ -58,11 +58,10 @@ export default class TextInput extends Vue {
   align-items: center;
   border: #1D1C24;
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 11px;
   background: #1D1C24;
   color: white;
-  gap: 6px;
-  margin-left: 12px;
+  gap: 8px;
 }
 
 .text-input {
@@ -82,8 +81,9 @@ export default class TextInput extends Vue {
 }
 
 .icon-button {
+  display: flex;
+  align-items: center;
   margin-left: auto;
-  margin-top: 2px;
   cursor: pointer;
 }
 </style>

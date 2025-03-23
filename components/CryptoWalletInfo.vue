@@ -29,7 +29,6 @@ export default class CryptoWalletInfo extends Vue {
 .container {
   display: flex;
   align-items: center;
-  margin-left: 12px;
   background: #1D1D2966;
   height: 92px;
   margin-top: 16px;

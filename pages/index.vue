@@ -27,19 +27,14 @@
     </div>
 
     <!--    Crypto Wallet Info-->
-    <CryptoWalletInfo icon="/crypto.png" />
-
-    <!--    Stepper Indicator-->
-    <div class="stepper">
-      <div class="bg"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <CryptoWalletInfoSlider icon="/crypto.png" />
 
     <!--    Transfer amount-->
-    <div class="transfer">
-      <TitleOracle text="Transfer amount" />
+    <div>
+      <button class="transfer">
+        <TitleOracle text="Transfer amount" />
+      </button>
+
     </div>
 
     <div class="crypto_exchange">
@@ -67,16 +62,18 @@
 
     <!--      TextInput-->
     <div class="text_input">
-      <TextInput
-        text="12jdfj438sdfjkbfgslardiogue3496adfh3g46g"
-        classes="custom-class"
+      <input-oracle-clear
+        :value="inputOracleClear"
+        input-class="custom-class"
+        :trash-action="true"
+        @inputClear="clearInput"
       />
     </div>
 
     <!--      frome save-->
 
     <div class="chose">
-      <TitleOracle text="Choose from Saved Addresses" classes="title-oracle" />
+      <button-oracle text="Choose from Saved Addresses" classes="title-oracle" />
     </div>
 
     <!--      oracle button-->
@@ -88,16 +85,24 @@
 </template>
 <script>
 import TitleOracle from '~/components/title-oracle.vue'
-import CryptoWalletInfo from '~/components/CryptoWalletInfo.vue'
+import CryptoWalletInfoSlider from '~/components/CryptoWalletInfoSlider.vue'
 export default {
   components: {
     TitleOracle,
-    CryptoWalletInfo,
+    CryptoWalletInfoSlider,
   },
   layout: 'mobile',
+  data() {
+    return {
+      inputOracleClear: '12jdfj438sdfjkbfgslardiogue3496adfh3g46g' ,
+    }
+  },
   methods: {
     toConfirmation() {
       this.$router.push('/confirmation')
+    },
+    clearInput(){
+      this.inputOracleClear = ''
     }
   }
 }
@@ -110,7 +115,9 @@ export default {
     align-items: center;
     margin-right: 10px;
     .icon {
-      margin-left: 10px;
+      display: flex;
+      align-items: normal;
+      justify-content: center;
       width: 22px;
     }
     .title-oracle {
@@ -125,7 +132,6 @@ export default {
   }
 
   .debiting {
-    margin-left: 14px;
     margin-top: 24px;
     .debiting-oracle {
       font-family: 'Hanson';
@@ -137,26 +143,12 @@ export default {
       color: #fff;
     }
   }
-  .stepper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 18px;
-    .bg {
-      background: #f64e2a;
-    }
-    div {
-      background: #211e2e;
-      border-radius: 50%;
-      width: 10px;
-      height: 10px;
-      margin: 3px;
-    }
-  }
+
   .transfer {
+    background: transparent;
+    text-align: start;
+    border: none;
     margin-top: 32px;
-    margin-left: 14px;
     font-family: 'Hanson';
     font-weight: 700;
     text-transform: uppercase;
@@ -167,10 +159,8 @@ export default {
   }
   .crypto_exchange {
     margin-top: 24px;
-    margin-left: 12px;
   }
   .info {
-    margin-left: 12px;
     margin-top: 14px;
     p {
       font-family: 'Reza Zulmi Alfaizi Sans';
@@ -183,7 +173,6 @@ export default {
     }
   }
   .destination {
-    margin-left: 14px;
     margin-top: 24px;
     font-family: 'Hanson';
     font-weight: 700;
@@ -194,11 +183,12 @@ export default {
     color: #fff;
   }
   .text_input {
+    background: #1e1d26;
+    border-radius: 8px;
     margin-top: 24px;
   }
 
   .chose {
-    margin-left: 14px;
     margin-top: 24px;
     font-family: 'Hanson';
     font-weight: 700;
@@ -211,12 +201,12 @@ export default {
     .title-oracle {
       border: 1px solid #f64e2a;
       border-radius: 8px;
-      padding: 6px;
+      //padding: 11px;
     }
   }
   .oracle_button {
-    margin-top: 100%;
-    margin-left: 12px;
+    margin-bottom: 20px;
+    margin-top: 100px;
     .oracle_button_component {
       background: #f64e2a;
     }
