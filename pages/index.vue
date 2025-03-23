@@ -119,6 +119,7 @@ export default {
       align-items: normal;
       justify-content: center;
       width: 22px;
+      height: 20px;
     }
     .title-oracle {
       font-family: 'Hanson';
