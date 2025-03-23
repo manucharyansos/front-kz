@@ -1,5 +1,5 @@
 <template>
-    <span class="title-oracle" :class="classes">{{ text }}</span>
+    <div class="title-oracle" :class="classes">{{ text }}</div>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator'

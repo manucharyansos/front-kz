@@ -1,7 +1,7 @@
 <template>
   <div :class="inputClass" class="input-container">
     <label v-if="label" class="label">{{ label }}</label>
-    <input v-model="value" :type="type" :placeholder="placeholder" :style="{ paddingLeft }" :readonly="readonly" />
+    <input v-model="value" :type="type" :placeholder="placeholder" :readonly="readonly" />
 
 <!--    <TrashIcon class="input-trash-action" />-->
     <div v-if="trashAction" class="icons">
@@ -104,7 +104,7 @@ export default class InputOracle extends Vue {
     border: none;
     outline: none;
     font-size: 14px;
-    max-width: 300px;
+    max-width: 280px;
 
     &::placeholder {
       font-family: 'Reza Zulmi Alfaizi Sans';
