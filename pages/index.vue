@@ -120,6 +120,7 @@ export default {
       justify-content: center;
       width: 22px;
       height: 20px;
+      margin-bottom: 2px;
     }
     .title-oracle {
       font-family: 'Hanson';
