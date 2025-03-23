@@ -118,8 +118,6 @@ export default {
       display: flex;
       align-items: normal;
       justify-content: center;
-      //width: 24px;
-      //height: 20px;
       margin-right: 10px;
     }
     .title-oracle {
