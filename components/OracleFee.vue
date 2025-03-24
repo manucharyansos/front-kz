@@ -39,6 +39,7 @@ export default class OracleFee extends Vue {
       font-weight: 400;
       font-size: 14px;
       line-height: 100%;
+      font-family: 'Reza Zulmi Alfaizi Sans';
       span {
         opacity: 0.5;
       }

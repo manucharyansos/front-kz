@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <carousel id="carousel" :per-page="1" :loop="true" :autoplay="true" :pagination="true">
+    <carousel id="carousel" :per-page="1" :loop="loop" :autoplay="autoplay" :pagination="true">
       <slide v-for="(wallet, index) in wallets" :key="index">
         <div class="container">
           <div class="btc_logo">
@@ -28,6 +28,16 @@ export default {
   components: {
     Carousel,
     Slide
+  },
+  props: {
+    loop: {
+      type: Boolean,
+      default: false
+    },
+    autoplay: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {
@@ -91,7 +101,7 @@ export default {
 
 .wallet-info {
   padding-top: 20px;
-  margin-left: 10px;
+  //margin-left: 10px;
   color: #fff;
   font-size: 14px;
 }

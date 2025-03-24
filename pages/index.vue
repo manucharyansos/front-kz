@@ -27,7 +27,7 @@
     </div>
 
     <!--    Crypto Wallet Info-->
-    <CryptoWalletInfoSlider icon="/crypto.png" />
+    <CryptoWalletInfoSlider icon="/crypto.png"/>
 
     <!--    Transfer amount-->
     <div>

@@ -19,7 +19,7 @@
         </svg>
       </div>
       <div class="clear_icon" @click="$emit('inputClear')">
-        <svg  xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="black">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 26 26" fill="black">
           <path d="M19.5 6.5L6.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
           <path d="M6.5 6.5L19.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -95,7 +95,7 @@ export default class InputOracle extends Vue {
     box-sizing: border-box;
     padding: 10px 12px;
     width: 100%;
-    height: 41px;
+    height: 43px;
     background: #1e1d26;
     border-radius: 8px;
     font-family: 'Reza Zulmi Alfaizi Sans';
@@ -121,10 +121,13 @@ export default class InputOracle extends Vue {
   cursor: pointer;
 }
 .clear_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #F64E2A;
   border-radius: 50%;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
