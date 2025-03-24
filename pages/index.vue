@@ -148,6 +148,8 @@ export default {
     background: transparent;
     text-align: start;
     border: none;
+    //margin: 0;
+    padding: 0;
     margin-top: 32px;
     font-family: 'Hanson';
     font-weight: 700;
