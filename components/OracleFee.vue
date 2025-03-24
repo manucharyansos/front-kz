@@ -26,7 +26,7 @@ export default class OracleFee extends Vue {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 10px;
+  padding-top: 10px;
 
   .fee-info {
     display: flex;
