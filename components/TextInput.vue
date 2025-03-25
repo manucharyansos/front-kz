@@ -47,7 +47,7 @@ export default class TextInput extends Vue {
 
 .text-input {
   width: 100%;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 100%;
   font-weight: 400;
   font-family: 'Reza Zulmi Alfaizi Sans';
