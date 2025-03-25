@@ -12,7 +12,7 @@ export default class TitleOracle extends Vue {
 </script>
 <style lang="scss">
 .title-oracle{
-  margin-top: 3px;
+  //margin-top: 3px;
   font-family: 'Hanson';
 
 }
